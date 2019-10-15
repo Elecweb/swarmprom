@@ -97,6 +97,7 @@ services:
     command:
       - '--config.file=/etc/alertmanager/alertmanager.yml'
       - '--storage.path=/alertmanager'
+      - '--web.external-url=http://ip172-18-0-32-bmim7bls883g00cdjvpg-9090.direct.labs.play-with-docker.com'
     volumes:
       - alertmanager:/alertmanager
     deploy:
