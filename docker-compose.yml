@@ -87,8 +87,7 @@ services:
           memory: 64M
 
   alertmanager:
-    build: ./alertmanager
-    image: alertmanager-custom
+    image: stefanprodan/swarmprom-alertmanager:v0.14.0
     networks:
       - net
     environment:
@@ -148,8 +147,7 @@ services:
           memory: 64M
 
   prometheus:
-    build: ./prometheus
-    image: prometheus-custom
+    image: stefanprodan/swarmprom-prometheus:v2.5.0
     networks:
       - net
     command:
