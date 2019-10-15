@@ -7,6 +7,7 @@ groups:
     for: 1m
     labels:
       severity: warning
+    generatorURL: "http://ip172-18-0-26-bmipq55s883g00cdka00-9090.direct.labs.play-with-docker.com"
     annotations:
       description: Swarm node {{ $labels.node_name }} CPU usage is at {{ humanize
         $value}}%.
